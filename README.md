@@ -35,6 +35,7 @@ El proyecto spring-boot-calculadora-ws-cliente esta compuesto por:
 2. Una clase de configuración SoapConfig que configura nuestro cliente SOAP.
 3. La clase SoapClient que contiene el método para el envío de información llamado operar.
 4. Un servicio denominado OperacionesService que contiene los métodos para calcular el promedio de una lista de números, la pendiente de una recta, el área de un triángulo y el área de un círculo. Todo através de las operaciones básicas del servicio SOAP.
+5. Una clase controller COntrollerRest que contiene los métodos Rest y que gestiona las distintas operaciones.
 
 ### Test de funcionamiento
 
