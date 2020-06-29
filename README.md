@@ -6,6 +6,13 @@ Calcualdora-ws es un servicio web SOAP que permite realizar las operaciones bás
 
 El proyecto se desarrollo sobre el framework de spring boot, maven y jaxb2; las pruebas unitarias se realizarion en Postaman y SoapUI.
 
+### Instalación
+
+1. Descargarel repositorio
+2. Importar proyecto Spring boot desde el IDE.
+3. Poner en marcha los dos programas.
+4. Acceder a los servicios REST através de la IP: http://localhost:8090
+
 ### Documentacion REST
 
 La documentacion del servicio REST se encuentra en Postman:
