@@ -4,7 +4,7 @@ Calcualdora-ws es un servicio web SOAP que permite realizar las operaciones bás
 
 ### Tecnologias usadas
 
-El proyecto se desarrollo sobre el framework de spring boot, maven y jaxb2; las pruebas unitarias se realizarion en Postaman y SoapUI
+El proyecto se desarrollo sobre el framework de spring boot, maven y jaxb2; las pruebas unitarias se realizarion en Postaman y SoapUI.
 
 ### Documentacion REST
 
@@ -26,7 +26,7 @@ El proyecto spring-boot-calculadora-ws-cliente esta compuesto por:
 
 1. Los objetos request y response con los atributos de envío de información.
 2. Una clase de configuración SoapConfig que configura nuestro cliente SOAP.
-3. La clase SoapClient que contiene el método para el envío de información llamado operar().
+3. La clase SoapClient que contiene el método para el envío de información llamado operar.
 4. Un servicio denominado OperacionesService que contiene los métodos para calcular el promedio de una lista de números, la pendiente de una recta, el área de un triángulo y el área de un círculo. Todo através de las operaciones básicas del servicio SOAP.
 
 ### Test de funcionamiento
@@ -39,8 +39,29 @@ Operación suma:
 ![Operación suma prueba unitaria postman](screnshots/Postman-suma.png)
 
 Pendiente de una recta:
-![Operación suma prueba unitaria postman](screnshots/Postman_pendiente.png)
+![Operación pendiente prueba unitaria postman](screnshots/Postman_pendiente.PNG)
+
+Promedio de una lista de números:
+![Operación promedio prueba unitaria postman](screnshots/Postman_promedio.PNG)
+
+Área de un círculo:
+![Operación área de un círculo prueba unitaria postman](screnshots/Postman_areaC.PNG)
+
+Área de un triángulo:
+![Operación área de un triángulo prueba unitaria postman](screnshots/Postman_areaT.PNG)
 
 
+2. Para las pruebas unitarias del servicio SOAP¨se utilizó la herramienta SoapUI mostrando lo siguiente:
 
+Operación suma:
+![Operación suma prueba unitaria soapui](screnshots/Soapui_suma.PNG)
+
+Operación resta:
+![Operación suma prueba unitaria soapui](screnshots/Soapui_resta.PNG)
+
+Operación multiplicación:
+![Operación suma prueba unitaria soapui](screnshots/Soapui_multiplicacion.PNG)
+
+Operación división:
+![Operación suma prueba unitaria soapui](screnshots/Soapui_division.PNG)
 
