@@ -27,6 +27,19 @@ El proyecto spring-boot-calculadora-ws-cliente esta compuesto por:
 1. Los objetos request y response con los atributos de envío de información.
 2. Una clase de configuración SoapConfig que configura nuestro cliente SOAP.
 3. La clase SoapClient que contiene el método para el envío de información llamado operar().
+4. Un servicio denominado OperacionesService que contiene los métodos para calcular el promedio de una lista de números, la pendiente de una recta, el área de un triángulo y el área de un círculo. Todo através de las operaciones básicas del servicio SOAP.
+
+### Test de funcionamiento
+
+Se hicieron las pruebas unitarias al servicio REST através de Postman obteniendo lo siguiente:
+
+1. Para las operaciones básicas se enviaron las variables a y b, corresponsientes a los dos operadores.
+
+Operación suma:
+![Operación suma prueba unitaria postman](screnshots/Postman-suma.png)
+
+Pendiente de una recta:
+![Operación suma prueba unitaria postman](screnshots/Postman_pendiente.png)
 
 
 
