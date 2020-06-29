@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2020.06.28 a las 05:40:09 PM COT 
+
+  -->
+  <bindings xmlns:tns="http://www.nexos-test.com/spring/soap/api/calculator" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.nexos_test.spring.soap.api.calculator"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:OperacionRequest">
+      <class ref="com.nexos_test.spring.soap.api.calculator.OperacionRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:OperacionResponse">
+      <class ref="com.nexos_test.spring.soap.api.calculator.OperacionResponse"/>
+    </bindings>
+  </bindings>
+</bindings>

@@ -1,0 +1,71 @@
+<wsdl:definitions
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:sch="http://www.nexos-test.com/spring/soap/api/calculator"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://www.nexos-test.com/spring/soap/api/calculator"
+	targetNamespace="http://www.nexos-test.com/spring/soap/api/calculator">
+	<wsdl:types>
+		<xsd:schema
+			xmlns:tns="http://www.nexos-test.org/spring/soap/api/calculator"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			elementFormDefault="qualified"
+			targetNamespace="http://www.nexos-test.com/spring/soap/api/calculator">
+			<xsd:element name="OperacionRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="operacion" type="xsd:string" />
+						<xsd:element name="a" type="xsd:double" />
+						<xsd:element name="b" type="xsd:double" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OperacionResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="resultado" type="xsd:double" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="OperacionResponse">
+		<wsdl:part element="tns:OperacionResponse"
+			name="OperacionResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="OperacionRequest">
+		<wsdl:part element="tns:OperacionRequest"
+			name="OperacionRequest">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="CalculatorServicePort">
+		<wsdl:operation name="Operacion">
+			<wsdl:input message="tns:OperacionRequest"
+				name="OperacionRequest">
+			</wsdl:input>
+			<wsdl:output message="tns:OperacionResponse"
+				name="OperacionResponse">
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="CalculatorServicePortSoap11"
+		type="tns:CalculatorServicePort">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="Operacion">
+			<soap:operation soapAction="" />
+			<wsdl:input name="OperacionRequest">
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output name="OperacionResponse">
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="CalculatorServicePortService">
+		<wsdl:port binding="tns:CalculatorServicePortSoap11"
+			name="CalculatorServicePortSoap11">
+			<soap:address location="http://localhost:8091/WS" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

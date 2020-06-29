@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+			targetNamespace="http://www.nexos-test.com/spring/soap/api/calculator" 
+			xmlns:tns="http://www.nexos-test.org/spring/soap/api/calculator" 
+			elementFormDefault="qualified">
+			<xsd:element name="OperacionRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="operacion" type="xsd:string"/>
+						<xsd:element name="a" type="xsd:double"/>
+						<xsd:element name="b" type="xsd:double"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="OperacionResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="resultado" type="xsd:double"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+</xsd:schema>
